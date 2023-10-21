@@ -7,26 +7,13 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (max-width: 600px) { 
-  body{
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-  }
-.header-container{
-  text-align: center;
-  padding: 10px;
-  min-height: 320px;
-  min-width: 481px;
-  
-}
 
-}
+
+
+
 .header-container {
     height: 100vh;
     width: 100vw;
-    min-height: 320px;
-    min-width: 481px;
     background-color: #000;
     color: aliceblue;
     box-sizing: border-box;
@@ -37,7 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 112px;
+    padding: 0 100px;
     position: relative;
 }
 
@@ -51,6 +38,12 @@ h1{
 h2{
   text-transform: uppercase;
   letter-spacing: 4px;
+  margin: 20px;
+  margin-top: 50px;
+}
+
+p{
+  margin: 20px;
 }
 
 .social-media{
@@ -98,9 +91,9 @@ h2{
 width: 50px;
 height: 2px;
 background-color:aliceblue;
-position: absolute;
+position: fixed;
 border-radius: 4px;
-transition: 2s ease-in-out;
+transition: 1s ease-in-out;
 }
 
 .checkbox .trace:nth-child(1) {
@@ -139,7 +132,7 @@ transform: rotate(0) ;
     }
 
     .menu-itens {
-      position: fixed;
+      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
@@ -202,3 +195,49 @@ transform: rotate(0) ;
         opacity: 1;
       }
 
+      /*seção do formulario*/
+
+      #contact {
+    text-align: center; 
+    
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    color: black;
+  } 
+
+  .section-label{
+    font-weight: bold;
+    
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 5px ;
+    border: 2px solid black;
+    border-radius: 5px;
+  }
+
+  .cta-button {
+    font-family: 'monserrat', 'sans-serif' ;
+    background-color: aliceblue;
+    color: black;
+    padding: 10px 20px;
+    border-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px; 
+  }
+  .cta-button:hover {
+   background-color: black;
+   color: aliceblue;
+  }
+
+  footer{
+    text-align: center;
+  }
