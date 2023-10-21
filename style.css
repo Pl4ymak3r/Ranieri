@@ -7,6 +7,13 @@ body{
     font-family:'monserrat';
 }
 
+@media screen and (max-width: 768px){
+  .header-container{ 
+    padding: 20px;
+  
+}
+}
+
 .header-container {
     height: 100vh;
     width: 100vw;
